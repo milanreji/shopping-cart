@@ -6,14 +6,20 @@ import "./App.css";
 
 function App() {
   const [itemCounter, setItemCounter] = useState(0);
+  const [cartArray, setCartArray] = useState([]);
 
   return (
     <div className="App">
-      <Navbar itemCounter={itemCounter} />
+      <Navbar
+        itemCounter={itemCounter}
+        products={products}
+        cartArray={cartArray}
+      />
       <Card
         products={products}
         itemCounter={itemCounter}
         setItemCounter={setItemCounter}
+        cartArray={cartArray}
       />
     </div>
   );

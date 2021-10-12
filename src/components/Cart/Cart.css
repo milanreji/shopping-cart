@@ -1,0 +1,31 @@
+.cart-container {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  margin: 10px;
+}
+
+.cart-img {
+  height: 100px;
+  width: 100px;
+}
+
+.item-info {
+  font-size: 1.5rem;
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.with-buttons {
+  display: flex;
+}
+
+.two-buttons {
+  margin-left: 10px;
+}
+
+button {
+  font-size: 20px;
+  margin: 5px;
+}

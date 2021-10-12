@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Cart from "../Cart/Cart";
 import "./Navbar.css";
 
-const Navbar = ({ itemCounter }) => {
+const Navbar = ({ itemCounter, products, cartArray }) => {
   const clickHandler = () => {
     setIsExpanded(!isExpanded);
   };
@@ -35,7 +35,12 @@ const Navbar = ({ itemCounter }) => {
         <i onClick={clickHandler} className="fas fa-shopping-cart fa-3x"></i>
         <div className="counter">{itemCounter}</div>
       </nav>
-      <Cart isExpanded={isExpanded} setIsExpanded={setIsExpanded} />
+      <Cart
+        isExpanded={isExpanded}
+        setIsExpanded={setIsExpanded}
+        products={products}
+        cartArray={cartArray}
+      />
     </div>
   );
 };
