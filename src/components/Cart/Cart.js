@@ -37,6 +37,17 @@ const Cart = ({ isExpanded, setIsExpanded, cartArray }) => {
           </div>
         );
       })}
+      <button
+        className="purchase"
+        onClick={() =>
+          alert(
+            "Purchased items are" + " " + filteredArray.map((item) => item.name)
+          )
+        }
+      >
+        Purchase
+      </button>
+      ;
     </div>
   );
 };
